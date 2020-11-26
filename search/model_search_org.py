@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from search.operations import OPS
+from org_nas.search.operations import OPS
 from torch.autograd import Variable
-from search.genotypes import PRIMITIVES
-from search.genotypes import Genotype
+from org_nas.search.genotypes import PRIMITIVES
+from org_nas.search.genotypes import Genotype
 
 
 def channel_shuffle(x, groups):
