@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from org_nas.operations import OPS
+from org_nas.operations import OPS, ReLUConvBN, DilConv, FactorizedReduce, SepConv
 from torch.autograd import Variable
 from org_nas.genotypes import PRIMITIVES
 from org_nas.genotypes import Genotype
