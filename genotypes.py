@@ -72,3 +72,5 @@ AmoebaNet = Genotype(
     ],
     reduce_concat=[3, 4, 6]
 )
+
+ORGNet = Genotype(normal=[('avg_pool_3x3', 0), ('sep_conv_5x5', 1), ('sep_conv_7x7', 0), ('skip_connect', 1), ('dil_conv_3x3', 2), ('dil_conv_3x3', 3), ('max_pool_3x3', 1), ('dil_conv_3x3', 0), ('sep_conv_7x7', 5), ('skip_connect', 3)], normal_concat=range(2, 7), reduce=[('sep_conv_5x5', 1), ('dil_conv_5x5', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('dil_conv_3x3', 2), ('sep_conv_3x3', 0), ('sep_conv_5x5', 3), ('dil_conv_5x5', 0)], reduce_concat=range(2, 7))
